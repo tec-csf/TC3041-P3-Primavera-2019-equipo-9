@@ -17,7 +17,7 @@ Para crear los contenedores con los datos y armar la aplicación, se ejecutaron 
 
 3. `sudo docker cp ../Data/cit-HepPh-dates.csv neo4j:/var/lib/neo4j/import/`
 
-1. Conectarse al localhost:7474 y correr los comandos del archivo `modelo.cypher` 
+1. Conectarse al `localhost:7474` y correr los comandos del archivo `modelo.cypher` 
 
 19. `cd flask-neo4j`
 
@@ -25,4 +25,4 @@ Para crear los contenedores con los datos y armar la aplicación, se ejecutaron 
 
 10000. `sudo docker run --name app -p 5000:5000 -d --net neo4j-net flask-neo4j`
 
-1234. Acceder a localhost:5000/<most_cited|most_citations_made|specific_citations|citations_gotten_year|citations_made_year>
+1234. Acceder a `localhost:5000/<most_cited|most_citations_made|specific_citations|citations_gotten_year|citations_made_year>`
